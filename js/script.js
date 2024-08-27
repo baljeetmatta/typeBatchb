@@ -29,9 +29,51 @@
 // item.    
 // }
 //a="test";
-let sum = (x, y) => {
-    if (y == undefined)
-        console.log("Not passed");
-    console.log("sum called", x, y);
-};
-sum(2);
+// let sum=(x:number,y?:number):number=>{
+//     if(y==undefined)
+//     {
+//         console.log("Not passed");
+//         y=x;
+//     }
+//     return x+y;
+//   //  console.log("sum called",x+y);
+// }
+// sum(2);
+// let drawPoint=(x:number,y:number)=>{
+//  // return "a";
+// }
+//drawPoint(12,3);
+// type Point=
+// {
+//   x:number,
+//   y?:number
+// }
+// interface Point{
+//   x:number;
+//   y?:number;
+// }
+// let drawPoint=(point:Point)=>{
+// }
+// let getDistance=(point1:Point,point2:Point)=>{
+// }
+class Point {
+    drawPoint() {
+        console.log(this.x, this.y);
+    }
+}
+//let point:Point=new Point();
+let point;
+point = new Point();
+point.x = 20;
+point.y = 30;
+point.drawPoint();
+// Point p;
+//Point *p=new Point();
+//Point p;
+//p=new Point();
+// let drawPoint=(point:{x:number,y:number})=>{
+// }
+//drawPoint({x:12});
+// let getDistance=(point1:{x:number,y:number},point2:{x:number,y:number})=>{
+// }
+//let drawPoint=()
